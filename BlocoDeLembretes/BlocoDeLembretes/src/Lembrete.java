@@ -15,8 +15,8 @@ public class Lembrete {
         return desc;
     }
 
-    Lembrete(int d, int m, int a, String nome, String desc){
-        this.data = new Data(d, m, a);
+    Lembrete(Data data, String nome, String desc){
+        this.data = new Data(data);
         this.nome = nome;
         this.desc = desc;
 
@@ -37,7 +37,14 @@ public class Lembrete {
         else
             m = "" + data.getMes();
 
-        return "\nData: " + d + "/" + m + "/" + data.getAno() + "\nNome: " + this.nome + "\nDescricao: " + this.desc;
+        return "\nNome: " + this.nome + "\nData: " + d + "/" + m + "/" + data.getAno() + "\nDescricao: " + this.desc;
+    }
+
+    public boolean nomeEhIgual(String n){
+        if(this.nome == n)
+            return true;
+        else
+            return false;
     }
 
     

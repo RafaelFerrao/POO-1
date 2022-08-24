@@ -48,4 +48,12 @@ public class Data {
         this.ano = dt.ano;
     }
 
+    public boolean dataEhIgual(Data dt){
+        if(this.ano == dt.getAno())
+            if(this.mes == dt.getMes())
+                if(this.dia == dt.getDia())
+                    return true;
+        return false;
+    }
+
 }
