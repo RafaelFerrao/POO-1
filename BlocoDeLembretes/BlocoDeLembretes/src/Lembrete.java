@@ -41,7 +41,7 @@ public class Lembrete {
     }
 
     public boolean nomeEhIgual(String n){
-        if(this.nome == n)
+        if(this.nome.equals(n))
             return true;
         else
             return false;

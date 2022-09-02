@@ -70,7 +70,6 @@ public static void main(String[] args) throws Exception {
                 nome = "";
                 nome = sc.nextLine();
                 nome += sc.nextLine();
-                System.out.println("TESTE: " + nome);
                 bloco.buscarLembretesPorNome(nome);
                 break;
             case 6:
