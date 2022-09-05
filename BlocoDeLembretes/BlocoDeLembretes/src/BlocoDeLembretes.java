@@ -1,5 +1,5 @@
 public class BlocoDeLembretes {
-    private Lembrete[] blocoLembretes;
+    protected Lembrete[] blocoLembretes; // Composição
     private int nLembretes;
     private int size;
 

@@ -1,5 +1,5 @@
 public class Lembrete {
-    private Data data;
+    protected Data data;
     private String nome;
     private String desc;
 
