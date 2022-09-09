@@ -27,5 +27,9 @@ public class Veiculo {
         this.velocidade -= valor;
     }
 
+    public String getModelo(){
+        return this.modelo;
+    }
+
 
 }
